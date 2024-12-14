@@ -1,0 +1,80 @@
+body{
+    background-color: #2C3340;
+}
+h1{
+    color: white;
+    background-color: #5988FF;
+}
+h2{
+    color: #FD98FB;
+    background-color: #5988FF;
+}
+h6{
+    color: #FD98FB;
+    background-color: #5988FF;
+}
+
+p{
+    font-size: 100px;
+    background-color: white;
+}
+label{
+    background-color: #5988FF;
+}
+@keyframes colorChange{
+    0%{
+        color: red;
+    }
+    33%{
+        color: blue;
+    }
+    66%{
+        color: green;
+    }
+    100%{
+        color: red;
+    }
+}
+h1{
+    animation: colorChange 3s linear infinite;
+}
+@keyframes rotacion{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes transparencia{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes transparenciayrotacion{
+    from{
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+    to{
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+@keyframes rotacion3D{  
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+img:hover{
+    animation: transparenciayrotacion 3s infinite;
+}
+p{
+    animation: rotacion3D 5s infinite;
+}
